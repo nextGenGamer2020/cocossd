@@ -47,7 +47,7 @@ function gotResults(error, results){
     else{
         console.log(results)
     }
-    console.log(results)
+
 }
 
 
