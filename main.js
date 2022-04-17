@@ -39,7 +39,14 @@ function modelLoaded(){
     objectDetector.detect(img, gotResults)
 }
 
-function gotResults(results){
+function gotResults(error, results){
+    if(error){
+        console.error(error)
+
+    }
+    else{
+        console.log(results)
+    }
     console.log(results)
 }
 
